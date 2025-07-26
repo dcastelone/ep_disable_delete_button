@@ -5,7 +5,6 @@ Disable and hide the **Delete Pad** button (`#delete-pad`) in Etherpad so that r
 ## Features
 
 * Hides the delete button with CSS and disables it with JavaScript.
-* Actively monitors the DOM to prevent re-insertion of the button by client-side tampering.
 * Rejects any `PAD_DELETE` messages sent from the browser, protecting against attempts to bypass the UI via the browser console.
 
 ## Installation
@@ -13,10 +12,11 @@ Disable and hide the **Delete Pad** button (`#delete-pad`) in Etherpad so that r
 From the Etherpad root directory run:
 
 ```bash
-npm install --no-save --legacy-peer-deps ep_disable_delete_button
+cd etherpad-lite
+pnpm run plugins i ep_disable_delete_button
 ```
 
-Or install it via the **/admin/plugins** page.
+Or install via the **/admin/plugins** page.
 
 After installing, restart Etherpad.
 

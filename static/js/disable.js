@@ -13,10 +13,6 @@ exports.postAceInit = () => {
   // Initial attempt (in case the DOM is already there)
   hideDeleteButton();
 
-  // Observe DOM changes and re-apply if someone tries to inject the button back
-  const observer = new MutationObserver(() => hideDeleteButton());
-  observer.observe(document.body, {childList: true, subtree: true});
-
   // Extra CSS safeguard
   $('head').append('<style>#delete-pad{display:none!important;pointer-events:none!important;}</style>');
 }; 
