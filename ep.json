@@ -1,0 +1,13 @@
+{
+  "parts": [
+    {
+      "name": "disableDeletePadButton",
+      "hooks": {
+        "handleMessage": "ep_disable_delete_button/server/hooks:handleMessage"
+      },
+      "client_hooks": {
+        "postAceInit": "ep_disable_delete_button/static/js/disable:postAceInit"
+      }
+    }
+  ]
+} 

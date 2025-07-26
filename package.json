@@ -1,0 +1,22 @@
+{
+  "name": "ep_disable_delete_button",
+  "description": "A plugin to disable and hide the Delete Pad button from Etherpad UI while still allowing server API deletions.",
+  "version": "0.0.1",
+  "author": {
+    "name": "DCastelone"
+  },
+  "contributors": [],
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-etherpad": "^4.0.4",
+    "typescript": "^5.4.2"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  }
+} 
